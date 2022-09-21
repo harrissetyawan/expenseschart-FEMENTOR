@@ -1,0 +1,83 @@
+:root {
+  /* COLORS */
+  --primary-red: hsl(10, 79%, 65%);
+  --primary-cyan: hsl(186, 34%, 60%);
+  --neutral-dark-brown: hsl(25, 47%, 15%);
+  --neutral-med-brown: hsl(28, 10%, 53%);
+  --neutral-cream: hsl(27, 66%, 92%);
+  --neutral-orange: hsl(33, 100%, 98%);
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url(design/DM_Sans/DMSans-Regular.ttf);
+}
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  font-family: "DM Sans";
+  background-color: var(--neutral-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+div.container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  height: fit-content;
+  align-items: center;
+}
+
+div.chart-box {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1em;
+}
+
+/* CHART HEADER */
+div.chart-header {
+  color: var(--neutral-orange);
+  background-color: var(--primary-red);
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+  border-radius: 15px;
+}
+
+div.header-title {
+  display: flex;
+  flex-direction: column;
+}
+div.header-title > h3 {
+  margin: 0.2em 0 0 0;
+  font-weight: bold;
+}
+div.header-title > span {
+  font-size: 0.7em;
+  font-weight: lighter;
+}
+div.chart-header > img {
+  align-self: center;
+  width: 3em;
+  height: 100%;
+}
+/* CHART BODY */
+div.chart-body {
+  background-color: var(--neutral-orange);
+  border-radius: 15px;
+  padding: 5%;
+}
+
+div.chart-title > h2 {
+  margin: 0.2em 0 0.2em 0;
+  font-weight: 900;
+}
